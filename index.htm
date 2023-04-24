@@ -8,32 +8,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <class="container">
+    <div class="container">
         <div class="encriptar">
             <textarea
-             name="texto"  class= "texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui">
-            </textarea>
-        </div>
-        <div class="terminos">
-            <p>Solo letras minusculas y sin acentos</p>
-        </div>
-        <div class="button">
-            <button class="btn-encriptar" type="button" onclick="encriptar()">
-                Encriptar
-            </button>
+             name="texto"
+             class="texto" 
+             id="texto" 
+             cols="30" 
+             rows="10" 
+             placeholder="Ingrese el texto aqui"
+             ></textarea>
+            <div class="terminos">
+                <p>Solo letras minusculas y sin acentos.</p>
+            </div>
+            <div class="button">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
 
-        <div class="button">
-            <button class="btn-desencriptar" type="button" onclick="desencriptar()">
-                Desencriptar
-            </button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">
+                    Desencriptar
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="encriptado">
-        <img src="" alt="" id="">
-        <div class="mensaje-encriptado" id="Mensaje-Encriptado">
-            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
-            <p id="Parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
-            <textarea name="Mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        <div class="encriptado">
+            <img src="" alt="" id="uwu">
+            <div class="mensaje-encriptado" id="Mensaje-Encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                <p id="Parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
+                <textarea name="Mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            </div>
         </div>
     </div>
 </body>
