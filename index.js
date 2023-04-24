@@ -1,6 +1,6 @@
 function encriptar() {
-    let texto = document.getElementById("texto");
-    let tituloMensaje = document.getElementById("titulo-mensaje");
+    let texto = document.getElementById ("texto");
+    let tituloMensaje = document.getElementById ("titulo-mensaje");
     let parrafo = document.getElementById ("parrafo");
     let muñeco = document.getElementById ("mensaje-no-encontrado");
 
@@ -12,17 +12,18 @@ function encriptar() {
     .replace(/u/gi, "ufat");
 
     if (texto.value.length != 0){
-    texto.value = textoCifrado;
+    mensaje.value = textoCifrado;
     console.log(texto);
     tituloMensaje.textContent = "Texto encriptado con exito!";
     parrafo.textContent = "";
     muñeco.src = "./img/encriptado.jpg";
     }
     else {
-    muñeco.src = "./img/muñeco.png";
-     alert ("debes ingresar algun texto");
+     muñeco.src = "./img/muñeco.png";
+     swal('Error!', 'Debes ingresar un texto', 'error');
      parrafo.textContent = "Ingrese el texto que desea encriptar o desencriptar";
      tituloMensaje.textContent = "Ningun mensaje encontrado";
+     mensaje.value = "";
     }
 }
 
@@ -40,15 +41,16 @@ function desencriptar() {
     .replace(/ufat/gi, "u");
 
     if (texto.value.length != 0){
-        texto.value = textoCifrado;
+        mensaje.value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con exito!";
         parrafo.textContent = "";
         muñeco.src = "./img/desencriptado.jpg";
     }
     else{
      muñeco.src = "./img/muñeco.png";
-     alert ("debes ingresar algun texto");
+     swal('Error!', 'Debes ingresar un texto', 'error');
      parrafo.textContent = "Ingrese el texto que desea encriptar o desencriptar";
+     mensaje.value = "";
      tituloMensaje.textContent = "Ningun mensaje encontrado";
     }
 }

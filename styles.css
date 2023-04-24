@@ -12,8 +12,8 @@
 
 .texto {
     position: absolute;
-    width: 577px;
-    height: 48px;
+    width: 740px;
+    height: 538px;
     left: 250px;
     top: 168px;
     border: none;
@@ -23,19 +23,23 @@
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f5fc;
+    resize: none;
 }
 
-/*.mensaje {
+.mensaje {
     position: absolute;
-    width: 336px;
-    height: 48px;
+    width: 359px;
+    height: 154px;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     line-height: 100%;
     border: none;
     background-color: #ffff;
     top: 110%;
-} */
+    resize: none;
+    font-size: 25px;
+    text-align: center;
+}
 
 .mensaje:focus,
 .mensaje:active {
@@ -243,9 +247,9 @@
 
     .encriptado {
         width: 80%;
-        height: 25%;
+        height: 22%;
         left: 10%;
-        top: 80%;
+        top: 77%;
     }
 
     .mensaje-encriptado {
@@ -257,5 +261,10 @@
         top: 0;
         display: none;
         visibility: hidden;
+    }
+
+    .mensaje{
+        width: 282px;
+        height: 38px;
     }
 }
