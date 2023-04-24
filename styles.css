@@ -12,10 +12,10 @@
 
 .texto {
     position: absolute;
-    width: 42%;
-    height: 60%;
-    left: 12%;
-    top: 15%;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
     border: none;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
@@ -23,6 +23,24 @@
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f5fc;
+}
+
+.mensaje {
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    line-height: 150%;
+    border: none;
+    background-color: #ffff;
+    top: 110%;
+}
+
+.mensaje:focus,
+.mensaje:active {
+    border: none;
+    outline: none;
 }
 
 .texto::placeholder {
@@ -89,6 +107,7 @@
     line-height: 19px;
     text-align: center;
     color: #ffff;
+    margin-right: 0.5%;
 }
 
 .btn-desencriptar {
@@ -109,6 +128,7 @@
     line-height: 19px;
     text-align: center;
     color: #0a3871;
+    margin-left: 0.5%;
 }
 
 .btn-desencriptar:hover,
@@ -117,3 +137,68 @@
     width: 24.5%;
     padding: 1.8%;
 }
+
+.encriptado {
+    position: absolute;
+    width: 400px;
+    height: 825px;
+    left: 1000px;
+    top: 50px;
+    background: #ffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin-left: 5%;
+}
+
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+    color: #343A40;
+}
+
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.mensaje-encriptado p {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #495057;
+}
+
+.encriptado img {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 8%;
+    top: 150px;
+}
+
+.logo {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    gap: 2.5%;
+    width: 164px;
+}
+
